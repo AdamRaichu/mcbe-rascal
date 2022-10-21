@@ -9,7 +9,7 @@
         "legs": "chicken_legs"
       },
       "textures": {
-        "default": "textures/entity/chicken"
+        "default": "textures/entity/rascal"
       },
       "geometry": {
         "default": "geometry.chicken.v1.12"
