@@ -1,0 +1,60 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Rascal behavior pack",
+    "description": "",
+    "uuid": "67b4b6a7-b8e6-4167-862f-9cf9b0a613e3",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      19,
+      20
+    ]
+  },
+  "modules": [
+    {
+      "description": "Script resources",
+      "language": "javascript",
+      "type": "script",
+      "uuid": "6669ed3a-ec1d-465e-8ea8-87c85acf2190",
+      "version": [
+        1,
+        0,
+        0
+      ],
+      "entry": "scripts/main.js"
+    },
+    {
+      "description": "module",
+      "type": "data",
+      "uuid": "6af3f934-ea71-4e69-99f9-82d8a86088a6",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "mojang-minecraft",
+      "version": "1.0.0-beta"
+    },
+    {
+      "module_name": "mojang-gametest",
+      "version": "1.0.0-beta"
+    },
+    {
+      "uuid": "44caf057-1fcd-4eb9-9564-05ae75112ab7",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

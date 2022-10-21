@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Guns: §8Textures",
+    "description": "Contains the required textures for Rascal",
+    "uuid": "44caf057-1fcd-4eb9-9564-05ae75112ab7",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      19,
+      20
+    ]
+  },
+  "modules": [
+    {
+      "description": "textures",
+      "type": "resources",
+      "uuid": "a884ed44-162c-4532-81a3-bd65bf9a9eca",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}
