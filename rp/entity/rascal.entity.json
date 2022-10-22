@@ -32,8 +32,8 @@
         "controller.render.chicken"
       ],
       "spawn_egg": {
-        "base_color": "#2a8aea",
-        "overlay_color": "#d63939"
+        "base_color": "#9d9d9d",
+        "overlay_color": "#1b467d"
       }
     }
   }
