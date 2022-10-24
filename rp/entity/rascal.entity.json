@@ -12,16 +12,14 @@
         "default": "textures/entity/rascal"
       },
       "geometry": {
-        "default": "geometry.chicken.v1.12"
+        "default": "geometry.rascal.v1"
       },
       "animations": {
-        "move": "animation.chicken.move",
-        "general": "animation.chicken.general",
+        "move": "animation.rascal.move",
         "look_at_target": "animation.common.look_at_target"
       },
       "scripts": {
         "animate": [
-          "general",
           {
             "move": "query.modified_move_speed"
           },
@@ -32,8 +30,8 @@
         "controller.render.chicken"
       ],
       "spawn_egg": {
-        "base_color": "#9d9d9d",
-        "overlay_color": "#1b467d"
+        "base_color": "#055b68",
+        "overlay_color": "#8a8695"
       }
     }
   }

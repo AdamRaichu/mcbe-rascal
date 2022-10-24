@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.rascal.move": {
+      "anim_time_update": "query.modified_distance_moved",
+      "loop": true,
+      "bones": {
+        "right_leg": {
+          "rotation": [
+            "math.cos(query.anim_time * 38.17) *  25.0",
+            0.0,
+            0.0
+          ]
+        },
+        "left_leg": {
+          "rotation": [
+            "math.cos(query.anim_time * 38.17) * -25.0",
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  }
+}

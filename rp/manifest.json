@@ -2,11 +2,11 @@
   "format_version": 2,
   "header": {
     "name": "Rascal: §8Textures",
-    "description": "Contains the required textures for Rascal",
+    "description": "Contains the required textures, models, and animations for Rascal",
     "uuid": "44caf057-1fcd-4eb9-9564-05ae75112ab7",
     "version": [
       1,
-      0,
+      3,
       0
     ],
     "min_engine_version": [
