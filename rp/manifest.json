@@ -5,8 +5,8 @@
     "description": "Contains the required textures, models, and animations for Rascal",
     "uuid": "44caf057-1fcd-4eb9-9564-05ae75112ab7",
     "version": [
-      1,
-      3,
+      2,
+      0,
       0
     ],
     "min_engine_version": [
@@ -25,6 +25,18 @@
         0,
         0
       ]
+    }
+  ],
+  "subpacks": [
+    {
+      "name": "Geometry v1",
+      "folder_name": "v1",
+      "memory_tier": 0
+    },
+    {
+      "name": "Geometry v2",
+      "folder_name": "v2",
+      "memory_tier": 0
     }
   ]
 }
