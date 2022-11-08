@@ -6,7 +6,7 @@ on:
        type: string
        required: true
 jobs:
-  build:
+  generate:
     uses: AdamRaichu/mcaddon-package-workflow/.github/workflows/main.yml@v1
     with:
       pack_name: example_pack
@@ -14,6 +14,7 @@ jobs:
       target_path: ./builds/${{ inputs.versionString }}
       bp_path: ./bp
       rp_path: ./rp
+  commit:
     steps:
       - name: commit changes
         run: |
