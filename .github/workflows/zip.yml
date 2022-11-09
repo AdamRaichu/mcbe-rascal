@@ -6,9 +6,10 @@ on:
        type: string
        required: true
 jobs:
-  generate:
-    runs-on: ubuntu-latest
+  checkout:
     uses: actions/checkout@v3
+  generate:
+    needs: checkout
     uses: AdamRaichu/mcaddon-package-workflow/.github/workflows/main.yml@v1
       with:
         pack_name: example_pack
@@ -16,6 +17,8 @@ jobs:
         target_path: ./builds/${{ inputs.versionString }}
         bp_path: ./bp
         rp_path: ./rp
+  commit:
+    needs: generate
     steps:
       - name: commit changes
         run: |
