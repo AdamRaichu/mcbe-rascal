@@ -7,6 +7,7 @@ on:
        required: true
 jobs:
   checkout:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
   generate:
@@ -20,6 +21,7 @@ jobs:
       rp_path: ./rp
   commit:
     needs: generate
+    runs-on: ubuntu-latest
     steps:
       - name: commit changes
         run: |
