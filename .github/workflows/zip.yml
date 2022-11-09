@@ -7,7 +7,8 @@ on:
        required: true
 jobs:
   checkout:
-    uses: actions/checkout@v3
+    steps:
+      - uses: actions/checkout@v3
   generate:
     needs: checkout
     uses: AdamRaichu/mcaddon-package-workflow/.github/workflows/main.yml@v1
