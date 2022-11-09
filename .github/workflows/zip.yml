@@ -17,7 +17,7 @@ jobs:
       pack_name: example_pack
       pack_type: 0
       target_path: ./builds/${{ inputs.versionString }}
-      bp_path: ./bp
+      bp_path: ./assets
       rp_path: ./rp
   commit:
     needs: generate
