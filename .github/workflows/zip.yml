@@ -6,12 +6,7 @@ on:
        type: string
        required: true
 jobs:
-  checkout:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
   generate:
-    needs: checkout
     uses: AdamRaichu/mcaddon-package-workflow/.github/workflows/main.yml@v1
     with:
       pack_name: example_pack
