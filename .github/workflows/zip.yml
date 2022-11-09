@@ -7,16 +7,16 @@ on:
        required: true
 jobs:
   generate:
-    uses: AdamRaichu/mcaddon-package-workflow/.github/workflows/main.yml@v1
-    with:
-      pack_name: example_pack
-      pack_type: 0
-      target_path: ./builds/${{ inputs.versionString }}
-      bp_path: ./bp
-      rp_path: ./rp
-  commit:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+      - uses: AdamRaichu/mcaddon-package-workflow/.github/workflows/main.yml@v1
+        with:
+          pack_name: example_pack
+          pack_type: 0
+          target_path: ./builds/${{ inputs.versionString }}
+          bp_path: ./bp
+          rp_path: ./rp
       - name: commit changes
         run: |
           git pull
