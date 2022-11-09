@@ -7,23 +7,10 @@ on:
        required: true
 jobs:
   generate:
-    uses: AdamRaichu/mcaddon-package-workflow/.github/workflows/main.yml@v1
+    uses: AdamRaichu/mcaddon-package-workflow/.github/workflows/main.yml@trial-1
     with:
       pack_name: example_pack
       pack_type: 0
       target_path: ./builds/${{ inputs.versionString }}
       bp_path: ./bp
       rp_path: ./rp
-  commit:
-    needs: generate
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: commit changes
-        run: |
-          git pull
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git commit -m "generate \`${{inputs.versionString}}\` assets"
-          git push
