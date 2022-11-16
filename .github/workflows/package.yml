@@ -7,10 +7,10 @@ on:
        required: true
 jobs:
   generate:
-    uses: AdamRaichu/mcaddon-package-workflow/.github/workflows/main.yml@trial-1
+    uses: AdamRaichu/mcaddon-package-workflow/.github/workflows/main.yml@v1
     with:
-      pack_name: example_pack
+      pack_name: rascal
       pack_type: 0
-      target_path: ./builds/${{ inputs.versionString }}
+      target_path: ./assets/${{ inputs.versionString }}
       bp_path: ./bp
       rp_path: ./rp
